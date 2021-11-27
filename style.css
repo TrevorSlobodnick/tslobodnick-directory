@@ -1,0 +1,38 @@
+:root {
+    --primary: lightblue;
+    --secondary: lightpink;
+}
+
+.card{
+    width: 18rem;
+    background-color: var(--primary);
+    margin: 0.5rem;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary{
+    background-color: var(--secondary) !important;
+}
+
+.x-wide-card{
+    width: 20rem;
+}
+
+.card .btn{
+    padding: 0.7rem 1.9rem;
+    font-size: 1.1rem;
+}
+
+.card[class*="container-"]{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 768px){
+    .container-sm{
+        width: 100% !important;
+    }
+}
