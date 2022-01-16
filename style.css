@@ -3,6 +3,35 @@
     --secondary: lightpink;
 }
 
+body{
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    background-image: url(./background_images/y-so-serious-white.png);
+}
+
+h1{
+    font-variant-caps: all-small-caps;
+}
+
+#description{
+    min-width: 400px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sites-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-end;
+    justify-items: center;
+    row-gap: 1.5rem;
+}
+
+.container{
+    background-color: rgba(245, 245, 245, 0.65);
+    min-height: 100vh;
+}
+
 .card{
     width: 18rem;
     background-color: var(--primary);
@@ -17,13 +46,10 @@
     background-color: var(--secondary) !important;
 }
 
-.x-wide-card{
-    width: 20rem;
-}
-
 .card .btn{
-    padding: 0.7rem 1.9rem;
     font-size: 1.1rem;
+    padding: 0.3rem 0.9rem;
+    font-variant-caps: all-small-caps;
 }
 
 .card[class*="container-"]{
@@ -31,8 +57,26 @@
     padding-right: 0px;
 }
 
+
+
+@media (max-width: 1400px){
+    #sites-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 990px){
+    #sites-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 768px){
-    .container-sm{
-        width: 100% !important;
+    #sites-container{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        width: 100%;
     }
 }
