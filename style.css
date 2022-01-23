@@ -1,8 +1,3 @@
-:root {
-    --primary: lightblue;
-    --secondary: lightpink;
-}
-
 body{
     font-family: Helvetica, Verdana, Arial, sans-serif;
     background-image: url(./background_images/y-so-serious-white.png);
@@ -34,16 +29,8 @@ h1{
 
 .card{
     width: 18rem;
-    background-color: var(--primary);
+    background-color: var(white);
     margin: 0.5rem;
-}
-
-.bg-primary{
-    background-color: var(--primary) !important;
-}
-
-.bg-secondary{
-    background-color: var(--secondary) !important;
 }
 
 .card .btn{
